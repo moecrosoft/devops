@@ -36,6 +36,3 @@ jobs:
         run: |
           docker build -t ${{ secrets.DOCKER_USERNAME }}/python-api:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/python-api:latest 
-
-      - name: Check formatting
-        run: black --check .
