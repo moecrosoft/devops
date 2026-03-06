@@ -6,7 +6,7 @@ client = TestClient(app)
 def test_home():
     response = client.get('/')
     assert response.status_code == 200
-    assert response.json() == {"message": "Hello from Docker + CI/CD"}
+    assert response.json() == {"message": "Hello my name is Moe"}
 
 def test_health():
     response = client.get('/health')

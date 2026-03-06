@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get('/')
 def home():
-    return {'message': 'Hello from Docker + CI/CD'}
+    return {'message': 'Hello my name is Moe'}
 
 @app.get('/health')
 def health():
